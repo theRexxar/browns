@@ -1,0 +1,30 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+$lang['invitation_manage']            = 'Manage invitation';
+$lang['invitation_edit']              = 'Edit';
+$lang['invitation_true']              = 'True';
+$lang['invitation_false']             = 'False';
+$lang['invitation_create']            = 'Create';
+$lang['invitation_list']              = 'Invitation List';
+$lang['invitation_new']               = 'Create invitation';
+$lang['invitation_edit_text']         = 'Edit this to suit your needs';
+$lang['invitation_no_records']        = 'There aren\'t any invitation in the system.';
+$lang['invitation_create_new']        = 'Create a new invitation.';
+$lang['invitation_create_success']    = 'invitation successfully created.';
+$lang['invitation_create_failure']    = 'There was a problem creating the invitation: ';
+$lang['invitation_create_new_button'] = 'Create New invitation';
+$lang['invitation_invalid_id']        = 'Invalid invitation ID.';
+$lang['invitation_edit_success']      = 'invitation successfully saved.';
+$lang['invitation_edit_failure']      = 'There was a problem saving the invitation: ';
+$lang['invitation_delete_success']    = 'invitation successfully deleted.';
+$lang['invitation_delete_failure']    = 'We could not delete invitation: ';
+$lang['invitation_delete_error']      = 'You have not selected any invitation to delete.';
+$lang['invitation_actions']           = 'Actions';
+$lang['invitation_cancel']            = 'Cancel';
+$lang['invitation_delete_record']     = 'Delete this invitation';
+$lang['invitation_delete_confirm']    = 'Are you sure you want to delete this invitation?';
+$lang['invitation_edit_heading']      = 'Edit invitation';
+
+// Activities
+$lang['invitation_act_create_record'] = 'Created record with ID';
+$lang['invitation_act_edit_record']   = 'Updated record with ID';
+$lang['invitation_act_delete_record'] = 'Deleted record with ID';

@@ -1,0 +1,30 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+$lang['trip_manage']            = 'Manage trip';
+$lang['trip_edit']              = 'Edit';
+$lang['trip_true']              = 'True';
+$lang['trip_false']             = 'False';
+$lang['trip_create']            = 'Create';
+$lang['trip_list']              = 'Trip List';
+$lang['trip_new']               = 'Create trip';
+$lang['trip_edit_text']         = 'Edit this to suit your needs';
+$lang['trip_no_records']        = 'There aren\'t any trip in the system.';
+$lang['trip_create_new']        = 'Create a new trip.';
+$lang['trip_create_success']    = 'trip successfully created.';
+$lang['trip_create_failure']    = 'There was a problem creating the trip: ';
+$lang['trip_create_new_button'] = 'Create New trip';
+$lang['trip_invalid_id']        = 'Invalid trip ID.';
+$lang['trip_edit_success']      = 'trip successfully saved.';
+$lang['trip_edit_failure']      = 'There was a problem saving the trip: ';
+$lang['trip_delete_success']    = 'trip successfully deleted.';
+$lang['trip_delete_failure']    = 'We could not delete trip: ';
+$lang['trip_delete_error']      = 'You have not selected any trip to delete.';
+$lang['trip_actions']           = 'Actions';
+$lang['trip_cancel']            = 'Cancel';
+$lang['trip_delete_record']     = 'Delete this trip';
+$lang['trip_delete_confirm']    = 'Are you sure you want to delete this trip?';
+$lang['trip_edit_heading']      = 'Edit trip';
+
+// Activities
+$lang['trip_act_create_record'] = 'Created record with ID';
+$lang['trip_act_edit_record']   = 'Updated record with ID';
+$lang['trip_act_delete_record'] = 'Deleted record with ID';
