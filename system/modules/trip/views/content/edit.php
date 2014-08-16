@@ -10,6 +10,15 @@ if( isset($trip) ) {
     $trip = (array)$trip;
 }
 $id = isset($trip['id']) ? $trip['id'] : '';
+
+if(isset($trip['invitation']) && !empty($trip['invitation'])){
+    $trip_invitation = explode(",", $trip['invitation']);
+}
+
+if(isset($trip['owner']) && !empty($trip['owner'])){
+    $trip_owner = explode(",", $trip['owner']);
+}
+
 ?>
 <div class="admin-box">
     <h3>Edit Trip</h3>
@@ -42,7 +51,25 @@ $id = isset($trip['id']) ? $trip['id'] : '';
                     <?php 
                         if(isset($owner) && !empty($owner)) {
                             foreach($owner as $key => $result){
-                                echo '<option value="'.$result->id.'">'.$result->display_name.'</option>';
+                                if(isset($trip_owner) && !empty($trip_owner)){
+                                    $show = false;
+                                    foreach ($trip_owner as $i => $val) {
+                                        if($result->id == $val) {
+                                            echo '<option value="'.$result->id.'" selected>'.$result->display_name.'</option>';
+                                            $show = true;
+                                        } else {
+                                            if($i == count($trip_owner)-1) {
+                                                if($show == false) {
+                                                    echo '<option value="'.$result->id.'">'.$result->display_name.'</option>';
+                                                    $show = true;
+                                                }
+                                            }
+                                        }
+                                    }    
+                                } else {
+                                    echo '<option value="'.$result->id.'">'.$result->display_name.'</option>';
+                                }
+                                
                             }
                         }
                     ?>
@@ -56,8 +83,31 @@ $id = isset($trip['id']) ? $trip['id'] : '';
             <?php echo form_label('invitation'. lang('bf_form_label_required'), 'invitation', array('class' => "control-label") ); ?>
             <div class="controls">
                 <select id="invitation" type="text" name="invitation[]" class"multi-select chosen-select" multiple>
-                    <option value="1">JEPRI TORANG SINAGA</option>
-                    <option value="2">MAULANA</option>
+                    <?php 
+                        if(isset($invitation) && !empty($invitation)) {
+                            foreach($invitation as $key => $result){
+                                if(isset($trip_invitation) && !empty($trip_invitation)){
+                                    $show = false;
+                                    foreach ($trip_invitation as $i => $val) {
+                                        if($result->id == $val) {
+                                            echo '<option value="'.$result->id.'" selected>'.$result->name.'</option>';
+                                            $show = true;
+                                        } else {
+                                            if($i == count($trip_invitation)-1) {
+                                                if($show == false) {
+                                                    echo '<option value="'.$result->id.'">'.$result->name.'</option>';
+                                                    $show = true;
+                                                }
+                                            }
+                                        }
+                                    }    
+                                } else {
+                                    echo '<option value="'.$result->id.'">'.$result->name.'</option>';
+                                }
+                                
+                            }
+                        }
+                    ?>
                 </select>
                 <span class="help-inline"><?php echo form_error('invitation'); ?></span>
             </div>

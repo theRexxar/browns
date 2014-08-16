@@ -21,10 +21,9 @@ module.exports = (grunt) ->
           "clean:dev"
           "less:compileCore"
           "less:compileCustom"
-          "less:backend"
           "concat:bootstrap"
           "concat:plugin"
-          "concat:custom_plugin"
+          "concat:custom"
           "watch"
         ]
         options:
@@ -38,42 +37,22 @@ module.exports = (grunt) ->
       bootstrap:
         src: [
           "public/js/bootstrap/transition.js"
-          "public/js/bootstrap/alert.js"
-          "public/js/bootstrap/button.js"
-          "public/js/bootstrap/carousel.js"
-          "public/js/bootstrap/collapse.js"
-          "public/js/bootstrap/dropdown.js"
-          "public/js/bootstrap/modal.js"
-          "public/js/bootstrap/tooltip.js"
-          "public/js/bootstrap/popover.js"
-          "public/js/bootstrap/scrollspy.js"
-          "public/js/bootstrap/tab.js"
-          "public/js/bootstrap/affix.js"
         ]
         dest: "public/js/bootstrap.js"
 
       plugin:
         src: [
-          "public/js/mylibs/jquery.scrollTo.js"
-          "public/js/mylibs/jquery.cycle2.js"
-          "public/js/mylibs/jquery.cycle2.carousel.js"
-          "public/js/mylibs/waypoints.min.js"
-          "public/js/mylibs/jquery.colorbox-min.js"
-          "public/js/mylibs/json2.js"
-          "public/js/bootstrap/tooltip.js"
-          "public/js/mylibs/jStorage.js"
-          "public/js/mylibs/cbpFWTabs.js"
-          "public/js/mylibs/lodash.js"
-          "public/js/mylibs/mustache.js"
-          "public/js/mylibs/jquery.mustache.js"
-          "public/js/mylibs/jquery.slimscroll.min.js"
-          "public/js/mylibs/jquery.validate.min.js"
+          "public/js/libs/modernizr.min.js"
+          "public/js/mylibs/turn.js"
+          "public/js/mylibs/querypp.custom.js"
+          "public/js/mylibs/jquery.bookblock.js"
+          "public/js/mylibs/jquery.colorbox.js"
         ]
         dest: "public/js/plugin.js"
 
-      custom_plugin:
+      custom:
         src: [
-          "public/js/tunetalk/*"
+          "public/js/custom/*"
 
         ]
         dest: "public/js/app.js"
@@ -85,13 +64,13 @@ module.exports = (grunt) ->
       src:
         src: "js/bootstrap/*.js"
 
-
     #our uglify options
     uglify:
       options:
         report: "min"
         compress:
           dead_code: true
+          drop_console: true
 
       # wrap: true,
       # sourceMap: true
@@ -99,7 +78,17 @@ module.exports = (grunt) ->
         src: "<%= concat.bootstrap.dest %>"
         dest: "public/js/bootstrap.min.js"
 
+      apps:
+        src: [
+          "public/js/plugins.js"
+        ]
+        dest: "public/js/apps.min.js"
 
+      main_script:
+        src: [
+          "public/js/app.js"
+        ]
+        dest: "public/js/<%= pkg.name.toLowerCase() %>.min.js"
 
     # less compiler
     less:
@@ -130,22 +119,11 @@ module.exports = (grunt) ->
           sourceMap: true
           outputSourceFiles: true
           sourceMapURL: "<%= pkg.name %>.css.map"
-          sourceMapFilename: "public/css/<%= pkg.name.toLowerCase() %>.css.map"
+          sourceMapFilename: "public/css/<%= pkg.name.toLowerCase() %>.css"
 
         files:
           "public/css/<%= pkg.name.toLowerCase() %>.css": "public/less/<%= pkg.name.toLowerCase() %>.less"
-
-      backend:
-        options:
-          strictMath: true
-          sourceMap: true
-          outputSourceFiles: true
-          sourceMapURL: "backend.css.map"
-          sourceMapFilename: "public/css/backend.css.map"
-
-        files:
-          "public/css/backend.css": "public/less/backend.less"
-
+          
       minify:
         options:
           cleancss: true,
@@ -166,13 +144,11 @@ module.exports = (grunt) ->
           'public/css/bootstrap.min.css': 'public/css/bootstrap.min.css'
           'public/css/bootstrap-theme.min.css': 'public/css/bootstrap-theme.min.css'
 
-
     clean:
       dev: [
         "public/js/bootstrap.js"
         "public/css/bootstrap.css"
         "public/css/bootstrap-theme.css"
-        "public/css/backend.css"
         "public/css/<%= pkg.name.toLowerCase() %>.css"
       ]
 
@@ -191,8 +167,8 @@ module.exports = (grunt) ->
     "less:compileCore"
     "less:compileTheme"
     "less:compileCustom"
-    "less:backend"
     "concat"
+    "uglify"
   ]
 
   grunt.registerTask "default", [

@@ -8,7 +8,10 @@ class Home extends Front_Controller {
 	}
 	
 	public function index()
-	{
+	{	
+		$vars = array();
+		$vars['page'] = 'home';
+		Template::set('data', $vars);
         Template::set('toolbar_title', "Home");
         Template::set_view('front_page/index');
 		Template::render();

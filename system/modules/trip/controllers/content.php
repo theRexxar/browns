@@ -168,11 +168,16 @@ class content extends Admin_Controller {
 	{
 		$this->auth->restrict('trip.Content.Edit');
 
-		$data['owner'] = '';
+		$data['owner']      = '';	
+		$data['invitation'] = '';
         
         $owner = $this->users_model->find_all();
+        $invitation = $this->invitation_model->find_all();
+
+        // var_dump($invitation); exit();
 
         $data['owner'] = $owner;
+        $data['invitation'] = $invitation;
 
         Template::set("data", $data);
 
