@@ -47,7 +47,8 @@ $(function(){
 				$navNext : $( '#bb-nav-next' ),
 				$navPrev : $( '#bb-nav-prev' ),
 				$navFirst : $( '#bb-nav-first' ),
-				$navLast : $( '#bb-nav-last' )
+				$navLast : $( '#bb-nav-last' ),
+				$navPager : $('.bb-pages')
 			},
 			init = function() {
 				config.$bookBlock.bookblock( {
@@ -81,6 +82,14 @@ $(function(){
 					config.$bookBlock.bookblock( 'last' );
 					return false;
 				} );
+				
+				config.$navPager.on('click touchstart', function() {
+					var _this = $(this);
+					var _thisPage = _this.data('page');
+					console.log(_thisPage);
+					config.$bookBlock.bookblock( 'jump', _thisPage );
+					return false;
+				});
 				
 				// add swipe events
 				$slides.on( {

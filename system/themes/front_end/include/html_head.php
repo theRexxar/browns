@@ -12,16 +12,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 
-    <title><?php echo isset($toolbar_title) ? $toolbar_title.' ~ ' : ''; ?>BroChallanges</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title><?php echo isset($toolbar_title) ? $toolbar_title.' ~ ' : ''; ?>Brotrip</title>
+    <meta name="description" content="Brotrip">
+    <meta name="author" content="<?php echo base_url(); ?>">
 
     <!-- Facebook Open Graph Meta Property -->
-    <meta property="og:title" content="Close Up Moment"/>
+    <meta property="og:title" content="Brotrip"/>
     <meta property="og:url" content="<?php echo base_url(); ?>"/>
-    <meta property="og:image" content="<?php echo base_url('assets/images/logo-200x200.png'); ?>"/>
-    <meta property="og:site_name" content="Close Up Moment"/>
-    <meta property="og:description" content=""/>
+    <meta property="og:image" content="<?php echo base_url('public/img/logo.png'); ?>"/>
+    <meta property="og:site_name" content="Brotrip"/>
+    <meta property="og:description" content="It feels good to be lost in the right direction! - Brotrip"/>
 
     <!-- Mobile viewport optimized: j.mp/bplateviewport -->
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->

@@ -20,7 +20,8 @@ footer {
   padding: 20px;
   z-index: 100;
   color: #000;
-  font: 700 18px/150% 'Open Sans', sans-serif;
+  font: 400 18px/150% 'Open Sans', sans-serif;
+  text-transform: uppercase;
 }
 footer a {
   color: #000;
@@ -41,8 +42,9 @@ footer a {
   margin: 10px;
 }
 .qoute span {
-  font-size: 0.8em;
+  font: 300 0.8em/150% 'Open Sans', sans-serif;
   color: #000;
+  text-transform: uppercase;
 }
 .qoute span:before {
   content: "- ";
@@ -50,6 +52,9 @@ footer a {
 .qoute img {
   margin-left: 1em;
   float: right;
+}
+.qoute p {
+  font: 300 0.9em/150% 'Open Sans', sans-serif;
 }
 .bb-bookblock {
   width: 400px;
@@ -459,7 +464,7 @@ footer a {
   width: 100%;
   left: 0;
   text-align: center;
-  margin-top: -25px;
+  margin-top: -124px;
 }
 .page-home .bb-custom-firstpage h1 {
   margin: 0;
@@ -477,35 +482,101 @@ footer a {
 }
 .page-home .bb-custom-wrapper nav {
   position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  z-index: 100;
+  bottom: 20px;
   padding: 0 20px;
   margin: -8px 0 0;
+  text-align: center;
+  width: 100%;
+}
+.page-home .bb-custom-wrapper nav div {
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 150;
+  padding: 5px 10px;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .page-home .bb-custom-wrapper nav a {
-  font: 700 16px/100% 'Open Sans', sans-serif;
+  font: 600 16px/100% 'Open Sans', sans-serif;
   color: #000;
   text-decoration: none;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #000;
+  padding: 4px 0;
+  box-sizing: border-box;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 .page-home .bb-custom-wrapper nav a:hover {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #333;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 .page-home .content-container,
 .page-home .video-container {
   padding: 20px;
+  position: relative;
+  width: 100%;
 }
 .page-home .content-container figure,
 .page-home .video-container figure {
   padding: 10px;
   border: 4px solid #fff;
   padding: 8px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 .page-home .content-container figure a,
 .page-home .video-container figure a {
   display: block;
+}
+.page-home .content-container figure a:after,
+.page-home .video-container figure a:after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  display: block;
+  background: url(../img/play.png) no-repeat center;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
 }
 .page-home .content-container figure img,
 .page-home .video-container figure img {
@@ -513,7 +584,101 @@ footer a {
 }
 .page-home .content-container:hover figure,
 .page-home .video-container:hover figure {
-  border: 4px solid #000000;
+  border: 4px solid #000;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.page-home .content-container:hover a:after,
+.page-home .video-container:hover a:after {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.page-home .content-container:hover .brotrip,
+.page-home .video-container:hover .brotrip {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.page-home .content-container .brotrip,
+.page-home .video-container .brotrip {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.page-home .content-container .brotrip a,
+.page-home .video-container .brotrip a {
+  display: block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 9px;
+  position: relative;
+}
+.page-home .content-container .brotrip a img,
+.page-home .video-container .brotrip a img {
+  border: 2px solid #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.page-home .content-container .brotrip a span,
+.page-home .video-container .brotrip a span {
+  position: absolute;
+  bottom: -25px;
+  width: 200%;
+  font-size: 9px;
+  left: 0;
+  line-height: 120%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  color: #333;
+  padding: 5px;
+  margin-left: -50%;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.page-home .content-container .brotrip a:hover span,
+.page-home .video-container .brotrip a:hover span {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 .page-home .no-js .bb-custom-wrapper {
   height: auto;
