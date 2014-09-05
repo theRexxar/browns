@@ -44,6 +44,21 @@
 		&.black{
 			background: #000;
 		}
+
+		&.text-only {
+			h1{
+				padding-bottom : 20px;
+				border-bottom  : 4px solid;
+			}
+			article{
+				padding: 20px 80px 20px 40px
+			}
+
+			p{
+				margin-bottom : 20px;
+				font-size     : 14px;
+			}
+		}
 	}
 
 	.bb-custom-firstpage{
@@ -52,7 +67,7 @@
 		width      : 100%;
 		left       : 0;
 		text-align : center;
-		margin-top : -124px;
+		margin-top : -68.5px;
 
 		h1{
 			margin  : 0;
@@ -63,6 +78,8 @@
 			span{
 				color: #fff;
 			}
+
+			img:first-child{margin-left: 20px}
 		}
 	}
 
@@ -86,19 +103,16 @@
 				position   : relative;
 				z-index    : 150;
 				padding    : 5px 10px;
-				background : #fff;
-				background : rgba(255,255,255,.5);
 				.border-radius(10px);
 			}
 			
 			a{
-				font            : 600 16px/100% @bodyFont;
-				color           : #000;
+				font            : 600 14px/30px @bodyFont;
+				color           : #777;
 				text-decoration : none;
 				display         : inline-block;
 				width           : 30px;
 				height          : 30px;
-				border          : 2px solid #000;
 				padding         : 4px 0;
 				box-sizing      : border-box;
 				text-align      : center;
@@ -107,8 +121,6 @@
                 &:hover{
 					text-decoration : none;
 					color           : rgba(0,0,0, .6);
-					border          : 2px solid #333;
-					.box-shadow(0 0 2px rgba(0, 0, 0, 0.8));
 					.transition(all 0.5s ease-in-out);
 
 				}
@@ -124,8 +136,6 @@
 		
 		figure{
 			padding : 10px;
-			border  : 4px solid #fff;
-			padding : 8px;
 			.transition(all 0.5s ease-in-out);
 
 			a{
@@ -155,7 +165,6 @@
 
 		&:hover{
 			figure{
-				border: 4px solid #000;
 				.transition(all 0.5s ease-in-out);
 			}
 
