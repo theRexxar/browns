@@ -20,9 +20,9 @@ $config['modules_locations'] = array(
 | path to your installation.
 |
 */
-$config['base_url']	      = 'http://'.$_SERVER['HTTP_HOST'].'/brochallange/';
-$config['assets_url']	  = 'http://'.$_SERVER['HTTP_HOST'].'/brochallange/public/';
-$config['uploads_url']	  = 'http://'.$_SERVER['HTTP_HOST'].'/brochallange/uploads/';
+$config['base_url']	      = 'http://'.$_SERVER['HTTP_HOST'].'/browns-furniture/';
+$config['assets_url']	  = 'http://'.$_SERVER['HTTP_HOST'].'/browns-furniture/public/';
+$config['uploads_url']	  = 'http://'.$_SERVER['HTTP_HOST'].'/browns-furniture/uploads/';
 
 $config['uploads_path']	  = './uploads/';
 

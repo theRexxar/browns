@@ -9,6 +9,9 @@ module.exports = (grunt) ->
 
     pkg: grunt.file.readJSON("package.json")
 
+    mozjpeg = require('imagemin-mozjpeg')
+
+
     # Watching changes files *.less, *.js,
     watch:
       all:
@@ -162,6 +165,19 @@ module.exports = (grunt) ->
         "public/css/<%= pkg.name.toLowerCase() %>.min.css"
       ]
 
+    imagemin: 
+      dynamic: 
+        options: 
+          optimizationLevel: 7,
+          svgoPlugins: [ removeViewBox: false ],
+          use: [mozjpeg()]
+        files: [
+          expand: true,                  
+          cwd: 'public/img/',                   
+          src: ['**/*.{png,jpg,gif,svg}'],   
+          dest: 'public/img/'                  
+        ]
+
   grunt.registerTask "dev", [
     "clean:dev"
     "less:compileCore"
@@ -174,6 +190,10 @@ module.exports = (grunt) ->
   grunt.registerTask "default", [
     "dev"
     "watch"
+  ]
+
+  grunt.registerTask "imgcompress", [
+    "imagemin:dynamic"
   ]
 
   grunt.registerTask "build", [

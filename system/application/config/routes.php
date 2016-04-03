@@ -41,6 +41,14 @@
 $route['default_controller'] = "home";
 $route['404_override'] = '';
 
+
+// Front End
+$route['products']       = 'home/products';
+$route['products/(:any)']= 'home/products_detail/$1';
+$route['our-philosophy'] = 'home/our_philosophy';
+$route['contact']        = 'home/contact';
+$route['send-email']     = 'home/sendEmail';
+
 // Authorization
 $route['login']					= 'users/login';
 $route['register']				= 'users/register';

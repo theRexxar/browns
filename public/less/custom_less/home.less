@@ -1,237 +1,82 @@
-.page-home{
-	.container-flip {
-		height : 100%;
-		height : 100%;
-	}
+#home-wellcome{
+	height          : 100%;
+	height          : 100vh;
+	width           : 100%;
+	display         : block;
+	background      : url(../img/bg-home.jpg) no-repeat center center;
+	background-size : cover;
 
-	.bb-custom-wrapper {
-		width    : 100%;
-		height   : 100%;
-		position : relative;
-	}
-
-	.bb-custom-wrapper .bb-bookblock {
-		width               : 100%;
-		height              : 100%;
-		-webkit-perspective : 2000px;
-		-moz-perspective    : 2000px;
-		perspective         : 2000px;
-	}
-
-	.bb-custom-side {
-		width                   : 50%;
-		float                   : left;
-		height                  : 100%;
-		overflow                : hidden;
-		/* Centering with flexbox */
-		display                 : -webkit-box;
-		display                 : -moz-box;
-		display                 : -webkit-flex;
-		display                 : flex;
-		-webkit-flex-direction  : row;
-		flex-direction          : row;
-		-webkit-flex-wrap       : wrap;
-		flex-wrap               : wrap;
-		-webkit-box-pack        : center;
-		-moz-box-pack           : center;
-		-webkit-justify-content : center;
-		justify-content         : center;
-		-webkit-box-align       : center;
-		-moz-box-align          : center;
-		-webkit-align-items     : center;
-		align-items             : center;
-
-		&.black{
-			background: #000;
-		}
-
-		&.text-only {
-			h1{
-				padding-bottom : 20px;
-				border-bottom  : 4px solid;
-			}
-			article{
-				padding: 20px 80px 20px 40px
-			}
-
-			p{
-				margin-bottom : 20px;
-				font-size     : 14px;
-			}
-		}
-	}
-
-	.bb-custom-firstpage{
-		position   : absolute;
-		top        : 50%;
-		width      : 100%;
-		left       : 0;
+	.v-middle{
+		display    : table;
 		text-align : center;
-		margin-top : -68.5px;
+		margin     : 0 auto;
+		position   : relative;
 
-		h1{
-			margin  : 0;
-			padding : 0;
-			font    : 800 50px/100% @bodyFont;
-			color   : #000;
-
-			span{
-				color: #fff;
-			}
-
-			img:first-child{margin-left: 20px}
+		> article{
+			display        : table-cell;
+			vertical-align : middle;
 		}
 	}
 
-
-	.bb-custom-wrapper {
-		width    : 100%;
-		height   : 100%;
-		position : relative;
-
-		nav{
-			position   : absolute;
-			bottom     : 20px;
-			padding    : 0 20px;
-			margin     : -8px 0 0;
-			text-align : center;
-			width: 100%;
-
-			div{
-				display    : inline-block;
-				margin     : 0 auto;
-				position   : relative;
-				z-index    : 150;
-				padding    : 5px 10px;
-				.border-radius(10px);
-			}
-			
-			a{
-				font            : 600 14px/30px @bodyFont;
-				color           : #777;
-				text-decoration : none;
-				display         : inline-block;
-				width           : 30px;
-				height          : 30px;
-				padding         : 4px 0;
-				box-sizing      : border-box;
-				text-align      : center;
-				.border-radius(50%);
-				.transition(all 0.5s ease-in-out);
-                &:hover{
-					text-decoration : none;
-					color           : rgba(0,0,0, .6);
-					.transition(all 0.5s ease-in-out);
-
-				}
-			}
-
-		}
+	.title-header{
+		color: rgb(254, 215, 155);
 	}
 
-	.content-container, .video-container{
-		padding  : 20px;
-		position : relative;
-		width    : 100%;
+	p{
+		font-size      : 12px;
+		letter-spacing : 3px;
+		text-transform : uppercase;
+	}
+
+	.arrow{
+		position    : absolute;
+		bottom      : 60px;
+		left        : 50%;
+		margin-left : -23px;
+	}
+}
+
+#home-discover{
+	.discover{
+		padding: 90px 0;
+
+		p{padding-right: 10px;}
+	}
+	
+	article{
+		margin-bottom: 30px;
+	}
+}
+
+#home-product{
+	padding : 90px 0;
+	color   : rgb(37,37,37);
+
+	.v-middle{
+		display    : table;
+		text-align : center;
+		margin     : 0 auto;
+		position   : relative;
+		height     : 470px;
+
+		> article{
+			display        : table-cell;
+			vertical-align : middle;
+		}
 		
-		figure{
-			padding : 10px;
-			.transition(all 0.5s ease-in-out);
-
-			a{
-				display: block;
-
-				&:after{
-					content     : "";
-					width       : 100px;
-					height      : 100px;
-					display     : block;
-					background  : url(../img/play.png) no-repeat center;
-					position    : absolute;
-					z-index     : 100;
-					top         : 50%;
-					left        : 50%;
-					margin-left : -50px;
-					margin-top  : -50px;
-					.transition(all 0.5s ease-in-out);
-					.opacity(0);
-				}
-			}
-
-			img{
-				max-width: 100%;
-			}
+		.title-header{
+			color: rgb(197, 157, 89);
 		}
 
-		&:hover{
-			figure{
-				.transition(all 0.5s ease-in-out);
-			}
-
-			a:after{
-				.transition(all 0.5s ease-in-out);
-				.opacity(1);
-			}
-
-			.brotrip{
-				.opacity(1);
-				.transition(all 1s ease-in-out);
-			}
+		.sub-title-header{
+			width  : 250px;
+			margin : 0 auto 20px;
 		}
 
-		.brotrip{
-			position : absolute;
-			top      : 40px;
-			left     : 40px;
-			.opacity(0);
-			.transition(all 1s ease-in-out);
-			a{
-				display       : block;
-				border-radius : 50%;
-				width         : 50px;
-				height        : 50px;
-				float         : left;
-				margin-right  : 9px;
-				position      : relative;
-				
-
-				img{
-					border        : 2px solid #fff;
-					.border-radius(50%);
-				}
-
-				span{
-					position      : absolute;
-					bottom        : -25px;
-					width         : 200%;
-					font-size     : 9px;
-					left          : 0;
-					line-height   : 120%;
-					text-align    : center;
-					background    : rgba(255,255,255,.7);
-					color         : #333;
-					padding       : 5px;
-					margin-left   : -50%;
-					.opacity(0);
-					.border-radius(5px);
-					.transition(all 1s ease-in-out);
-				}
-
-				&:hover{
-					span{
-						.opacity(1);
-						.transition(all 1s ease-in-out);
-					}
-				}
-			}
+		p{
+			float   : left;
+			padding : 0 30px;
+			margin  : 30px 0 10px;
 		}
-	}
-
-	.no-js .bb-custom-wrapper {
-		height: auto;
-	}
-
-	.no-js .bb-custom-content {
-		height: 470px;
 	}
 }

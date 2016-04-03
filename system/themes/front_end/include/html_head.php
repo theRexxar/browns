@@ -12,16 +12,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 
-    <title><?php echo isset($toolbar_title) ? $toolbar_title.' ~ ' : ''; ?>Brotrip</title>
-    <meta name="description" content="Brotrip">
+    <title><?php echo isset($toolbar_title) ? $toolbar_title.' ~ ' : ''; ?>Browns Furniture</title>
+    <meta name="description" content="Browns Furniture">
     <meta name="author" content="<?php echo base_url(); ?>">
 
     <!-- Facebook Open Graph Meta Property -->
-    <meta property="og:title" content="Brotrip"/>
+    <meta property="og:title" content="Browns Furniture"/>
     <meta property="og:url" content="<?php echo base_url(); ?>"/>
     <meta property="og:image" content="<?php echo base_url('public/img/logo.png'); ?>"/>
-    <meta property="og:site_name" content="Brotrip"/>
-    <meta property="og:description" content="It feels good to be lost in the right direction! - Brotrip"/>
+    <meta property="og:site_name" content="Browns Furniture"/>
+    <meta property="og:description" content="It feels good to be lost in the right direction! - Browns Furniture"/>
 
     <!-- Mobile viewport optimized: j.mp/bplateviewport -->
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
@@ -33,7 +33,7 @@
 
     <!-- CSS: implied media="all" -->      
     <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/bootstrap.css">  
-    <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/brochallange.css">  
+    <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/browns-furniture.css">  
 
     <!-- Uncomment if you are specifically targeting less enabled mobile browsers
     <link rel="stylesheet" media="handheld" href="public/css/handheld.css">  -->
@@ -44,6 +44,7 @@
     <script>
         var BASE_URL = '<?php echo base_url(); ?>';
     </script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 </head>
 
 <body>

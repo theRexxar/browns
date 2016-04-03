@@ -1,192 +1,98 @@
-<div class="container-flip hidden-xs">
-	<div class="bb-custom-wrapper">
-		<div id="bb-bookblock" class="bb-bookblock">
-			<div class="bb-item">
-				<div class="bb-custom-firstpage">
-					<h1><img src="<?php echo base_url();?>public/img/brotrip_logo.png" alt="brotrip"></h1>	
-				</div>
-				<div class="bb-custom-side">
-				</div>
-				<div class="bb-custom-side black">
-				</div>
-			</div>
-			<div class="bb-item">
-				<div class="bb-custom-side">
-					<div class="video-container">
-						<figure>
-							<a href="http://www.youtube.com/embed/VQFqt8GdDdQ?vq=hd720&rel=0&wmode=transparent&autoplay=1" class="popup-content" data-type="video" data-url="http://www.youtube.com/watch?v=VQFqt8GdDdQ"><img src="<?php echo base_url();?>public/img/ora-ambon.png" alt="ora ambon"></a>
-						</figure>
-						<div class="brotrip">
-							<a href="https://www.instagram.com/jeprisinaga" target="_blank">
-								<img src="http://graph.facebook.com/torang.sinaga/picture?type=square" alt="">
-								<span>Jepri Sinaga (JS)</span>
-							</a>
-							<a href="https://www.instagram.com/bekicotngesot" target="_blank">
-								<img src="http://graph.facebook.com/rendy.alimudin/picture?type=square" alt="">
-								<span>Rendy Alimudin</span>
-							</a>
-							<a href="https://www.instagram.com/acionk" target="_blank">
-								<img src="http://graph.facebook.com/acionk.arifin/picture?type=square" alt="">
-								<span>Acionk Arifin (-/\/-)</span>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="bb-custom-side">
-					<div class="content-container">
-						<div class="qoute">
-							<!-- <img src="<?php echo base_url(); ?>public/img/ambon_maluku_black_logo.png" alt="ora - ambon - maluku"> -->
-							<blockquote>
-								<p>
-									It feels good to be lost in the right direction!	
-								</p>
-								<span>
-									BroTrip
-								</span>
-							</blockquote>	
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="bb-item">
-				<div class="bb-custom-side">
-					<div class="video-container">
-						<figure>
-							<a href="http://www.youtube.com/embed/k8kzxFcFjtc?vq=hd720&rel=0&wmode=transparent&autoplay=1" class="popup-content" data-type="video" data-url="http://www.youtube.com/watch?v=VQFqt8GdDdQ"><img src="<?php echo base_url();?>public/img/brotrip-rinjani.jpg" alt="rinjani - lombok"></a>
-						</figure>
-						<div class="brotrip">
-							<a href="https://www.instagram.com/jeprisinaga" target="_blank">
-								<img src="http://graph.facebook.com/torang.sinaga/picture?type=square" alt="">
-								<span>Jepri Sinaga (JS)</span>
-							</a>
-							<a href="https://www.instagram.com/justmaul" target="_blank">
-								<img src="http://graph.facebook.com/nurhadimaulana/picture?type=square" alt="">
-								<span>Maulana Nurhadi</span>
-							</a>
-							<a href="https://www.instagram.com/farhansv">
-								<img src="http://graph.facebook.com/mohammadfarhan/picture?type=square" alt="">
-								<span>Mohammad Farhan Noor</span>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="bb-custom-side">
-					<div class="content-container">
-						<div class="qoute">
-							<!-- <img src="<?php echo base_url(); ?>public/img/ambon_maluku_black_logo.png" alt="rinjani - lombok"> -->
-							<blockquote>
-								<p>
-									Matahari masih menunjukkan sinarnya, tapi cahayanya kian memudar karena dalam hitungan menit akan berganti malam. Kami berhenti sejenak untuk mengambil nafas dan menyiapkan headlamp, sebelum melanjutkan kembali perjalanan, menuju titik tertinggi Gunung Rinjani. 
-								</p>
-								<span>
-									BroTrip
-								</span>
-							</blockquote>	
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="bb-item">
-				<div class="bb-custom-side">
-					<div class="video-container">
-						<figure>
-							<a href="http://www.youtube.com/embed/x-JYmxYux4E?vq=hd720&rel=0&wmode=transparent&autoplay=1" class="popup-content" data-type="video" data-url="http://www.youtube.com/watch?v=VQFqt8GdDdQ"><img src="<?php echo base_url();?>public/img/weh.jpg" alt="weh - aceh"></a>
-						</figure>
-						<div class="brotrip">
-							<a href="https://www.instagram.com/bekicotngesot" target="_blank">
-								<img src="http://graph.facebook.com/rendy.alimudin/picture?type=square" alt="">
-								<span>Rendy Alimudin</span>
-							</a>
-							<a href="https://www.instagram.com/justmaul" target="_blank">
-								<img src="http://graph.facebook.com/nurhadimaulana/picture?type=square" alt="">
-								<span>Maulana Nurhadi</span>
-							</a>
-							<a href="https://www.instagram.com/farhansv">
-								<img src="http://graph.facebook.com/mohammadfarhan/picture?type=square" alt="">
-								<span>Mohammad Farhan Noor</span>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="bb-custom-side">
-					<div class="content-container">
-						<div class="qoute">
-							<!-- <img src="<?php echo base_url(); ?>public/img/ambon_maluku_black_logo.png" alt="rinjani - lombok"> -->
-							<blockquote>
-								<p>
-									When you arise in the morning with the first sunrise, think of what a precious privilege it is to be alive - to breath, to think, to enjoy and to love
-								</p>
-								<span>
-									BroTrip
-								</span>
-							</blockquote>	
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="bb-item">
-				<div class="bb-custom-side text-only">
-					<h1>ABOUT</h1>
-				</div>
-				<div class="bb-custom-side text-only">
+<div class="wrapper-container">
+	<section id="home-wellcome" class="wrapper panelone">
+		<div class="container">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<div class="v-middle h-100 text-center">
 					<article>
-						<p><em>“In the course of our journey leading to consciousness, the objective should not be creating a positive character, and thus a pleasant scenario, but finding the existence behind every scenario.”</em></p>
-						<p>Cakrawala adalah batas langit dan bumi. Di baliknya, mungkin bukan lagi Sang saka Merah Putih. </p>
-						<p>Kami hanya anak negeri yang mencoba keluar dari pakem dan pagu profesi. Bankir, dokter dan menteri, hanyalah sebuah tirani pekerjaan bagi kami.</p>
-						<p>Di luar, kami berpetualang melintasi seluruh penjuru bumi, melewati awan dan negeri-negeri, naik mendaki dan loncat menyebrangi, hingga menyelam dan berlayar mengarungi.</p>
-						<p><em>"Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover.</em></p>
-						<p><em>Because</em>...</p>
-						<p><em>"a thousand miles journey starts with a little steps"</em> - Lao Tzu.</p>	
+						<h1 class="title-header">Welcome</h1>
+						<h3 class="sub-title-header title-label color-white small">Browns Furniture <i class="icon-symbol"></i></h3>
+						<p class="color-white">Pure Indonesian craftmanship</p>
 					</article>
-					
+					<a href="#discover" class="scroll-to arrow down" title="discover more" data-target="home-discover">discover</a>
 				</div>
 			</div>
 		</div>
-		<nav>
-			<div class="nav-pager">
-				<a id="bb-nav-prev" href="#" class=""><</a>
-				<a class="bb-pages" href="#1" data-page="2">1</a>
-				<a class="bb-pages" href="#2" data-page="3">2</a>
-				<a class="bb-pages" href="#3" data-page="4">3</a>
-				<a class="bb-pages" href="#4" data-page="5">4</a>
-				<a id="bb-nav-next" href="#" class="">></a>
+	</section>
+	<section id="home-discover" class="wrapper panelone">
+		<div class="container discover">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<article class="col-lg-4 col-sm-4 col-md-4 col-lg-offset-4 col-md-offset-4 col-sm-offset-4">
+						<h1 class="title-header">Discover</h1>
+						<h3 class="sub-title-header title-label">Our Story <i class="icon-symbol"></i></h3>	
+					</article>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+					<p>Originated from our interest to furniture and had deals in the world of furniture, we would develop our passion for the art aesthetics with devoting our scope especially in the interior. We are committed to produce strong interior that is not only considered beautiful, but also qualified. It can be seen from how we sustained and keep growing from year to year.</p>
+					<p><a href="<?php echo base_url();?>our-philoshopy" class="link">Our Philosophy</a></p>
+				</div>
 			</div>
-		</nav>
-
-	</div>
-
-</div><!-- /container -->
-
-<div class="visible-xs container-mobile">
-	<div class="content-mobile text-center">
-		<figure class="m-t">
-			<img src="<?php echo base_url();?>public/img/logo.png" alt="brotrip" width="130">
-		</figure>
-		<p class="m-t">Our highest act of selfishness is asking you to open this site through laptop/pc!</p>
-		<p>Yes! Don't ever rush fate. The best things in life are worth the wait.</p>
-		<div class="brotrip">
-			<a href="https://www.instagram.com/jeprisinaga" target="_blank">
-				<img src="http://graph.facebook.com/torang.sinaga/picture?type=square" alt="">
-				<span>Jepri Sinaga (JS)</span>
-			</a>
-			<a href="https://www.instagram.com/bekicotngesot" target="_blank">
-				<img src="http://graph.facebook.com/rendy.alimudin/picture?type=square" alt="">
-				<span>Rendy Alimudin</span>
-			</a>
-			<a href="https://www.instagram.com/acionk" target="_blank">
-				<img src="http://graph.facebook.com/acionk.arifin/picture?type=square" alt="">
-				<span>Acionk Arifin (-/\/-)</span>
-			</a>
-			<a href="https://www.instagram.com/justmaul" target="_blank">
-				<img src="http://graph.facebook.com/nurhadimaulana/picture?type=square" alt="">
-				<span>Maulana Nurhadi</span>
-			</a>
-			<a href="https://www.instagram.com/farhansv">
-				<img src="http://graph.facebook.com/mohammadfarhan/picture?type=square" alt="">
-				<span>Mohammad Farhan Noor</span>
-			</a>
 		</div>
-	</div>
+		<div class="story">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<article class="text-center">
+							<p>The experience of trained hands, in the fully handmade furniture refined <br>inside the hystorical Browns Furniture Studio</p>
+						</article>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="home-product">
+		<div class="container">
+			<div class="row no-gutter">
+				<div class="col-lg-6 col-sm-6 col-md-6">
+					<div class="v-middle text-center">
+						<article>
+							<h3 class="title-header">Room</h3>
+							<h3 class="sub-title-header title-label">Interiors <i class="icon-symbol"></i></h3>
+							<p>Give your idealism regarding your residence or place of work interior to us—about how curtains may gracefully be attached, or a charming wallpaper, as well as a comfortable sofa or pretty cushions --we will make all projects done with your satisfaction as our main goal.</p>
+							<a href="<?php echo base_url();?>products/dining" title="discover more" class="link">Discover More</a>
+						</article>
+					</div>
+				</div>
+				<div class="col-lg-6 col-sm-6 col-md-6">
+					<figure>
+						<img src="<?php echo base_url();?>public/img/product/img_thumb_room.jpg" alt="Dining venues">
+					</figure>
+				</div>
+			</div>
+			<div class="row no-gutter">
+				<div class="col-lg-6 col-sm-6 col-md-6">
+					<figure>
+						<img src="<?php echo base_url();?>public/img/product/img_thumb_dining.jpg" alt="Product Indoor">
+					</figure>
+				</div>
+				<div class="col-lg-6 col-sm-6 col-md-6">
+					<div class="v-middle text-center">
+						<article>
+							<h3 class="title-header">Dining</h3>
+							<h3 class="sub-title-header title-label">Venues <i class="icon-symbol"></i></h3>
+							<p>Want to make the exterior of your residence to be more complete? We can. Let's say you need a mattress that makes you reluctant to rise when lying on it while lounging by the pool, or in need of a comfortable bench for relaxing with relatives in your private garden. We will certainly make the products with the best quality we have.</p>
+							<a href="<?php echo base_url();?>products/outdoor" title="discover more" class="link">Discover More</a>
+						</article>
+					</div>
+				</div>
+			</div>
+			<div class="row no-gutter">
+				<div class="col-lg-6 col-sm-6 col-md-6">
+					<div class="v-middle text-center">
+						<article>
+							<h3 class="title-header">Other</h3>
+							<h3 class="sub-title-header title-label">Places <i class="icon-symbol"></i></h3>
+							<p>Give your idealism regarding your residence or place of work interior to us—about how curtains may gracefully be attached, or a charming wallpaper, as well as a comfortable sofa or pretty cushions --we will make all projects done with your satisfaction as our main goal.</p>
+							<a href="<?php echo base_url();?>products/other" title="discover more" class="link">Discover More</a>
+						</article>
+					</div>
+				</div>
+				<div class="col-lg-6 col-sm-6 col-md-6">
+					<figure>
+						<img src="<?php echo base_url();?>public/img/product/img_thumb_other.jpg" alt="Place">
+					</figure>
+				</div>
+			</div>
+		</div>
+	</section>
 </div>
