@@ -24,7 +24,7 @@
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12 text-center">
 					<p>Originated from our interest to furniture and had deals in the world of furniture, we would develop our passion for the art aesthetics with devoting our scope especially in the interior. We are committed to produce strong interior that is not only considered beautiful, but also qualified. It can be seen from how we sustained and keep growing from year to year.</p>
-					<p><a href="<?php echo base_url();?>our-philoshopy" class="link">Our Philosophy</a></p>
+					<p><a href="<?php echo base_url();?>our-philosophy" class="link">Our Philosophy</a></p>
 				</div>
 			</div>
 		</div>
@@ -46,10 +46,10 @@
 				<div class="col-lg-6 col-sm-6 col-md-6">
 					<div class="v-middle text-center">
 						<article>
-							<h3 class="title-header">Room</h3>
-							<h3 class="sub-title-header title-label">Interiors <i class="icon-symbol"></i></h3>
+							<h3 class="title-header">Private</h3>
+							<h3 class="sub-title-header title-label">Residence <i class="icon-symbol"></i></h3>
 							<p>Give your idealism regarding your residence or place of work interior to us—about how curtains may gracefully be attached, or a charming wallpaper, as well as a comfortable sofa or pretty cushions --we will make all projects done with your satisfaction as our main goal.</p>
-							<a href="<?php echo base_url();?>products/dining" title="discover more" class="link">Discover More</a>
+							<a href="<?php echo base_url();?>products/private" title="discover more" class="link">Discover More</a>
 						</article>
 					</div>
 				</div>
@@ -68,10 +68,10 @@
 				<div class="col-lg-6 col-sm-6 col-md-6">
 					<div class="v-middle text-center">
 						<article>
-							<h3 class="title-header">Dining</h3>
+							<h3 class="title-header">Business</h3>
 							<h3 class="sub-title-header title-label">Venues <i class="icon-symbol"></i></h3>
 							<p>Want to make the exterior of your residence to be more complete? We can. Let's say you need a mattress that makes you reluctant to rise when lying on it while lounging by the pool, or in need of a comfortable bench for relaxing with relatives in your private garden. We will certainly make the products with the best quality we have.</p>
-							<a href="<?php echo base_url();?>products/outdoor" title="discover more" class="link">Discover More</a>
+							<a href="<?php echo base_url();?>products/business" title="discover more" class="link">Discover More</a>
 						</article>
 					</div>
 				</div>
@@ -81,7 +81,7 @@
 					<div class="v-middle text-center">
 						<article>
 							<h3 class="title-header">Other</h3>
-							<h3 class="sub-title-header title-label">Places <i class="icon-symbol"></i></h3>
+							<h3 class="sub-title-header title-label">Creations <i class="icon-symbol"></i></h3>
 							<p>Give your idealism regarding your residence or place of work interior to us—about how curtains may gracefully be attached, or a charming wallpaper, as well as a comfortable sofa or pretty cushions --we will make all projects done with your satisfaction as our main goal.</p>
 							<a href="<?php echo base_url();?>products/other" title="discover more" class="link">Discover More</a>
 						</article>

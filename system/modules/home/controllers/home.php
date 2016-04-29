@@ -42,21 +42,21 @@ class Home extends Front_Controller {
 		$vars = array();
 		if(isset($products) && !empty($products)) {
 
-			if ($products == 'room') {
-				$vars['page'] = 'products-detail ~ Room';
+			if ($products == 'private') {
+				$vars['page'] = 'products-detail ~ Private Residence';
 				Template::set('data', $vars);
-		        Template::set('toolbar_title', "Products Detail");
-		        Template::set_view('front_page/product_detail_room');		
-			} elseif ($products == 'dining') {
-				$vars['page'] = 'products-detail ~ Dining';
+		        Template::set('toolbar_title', "Private Residence");
+		        Template::set_view('front_page/product_detail_private_residences');		
+			} elseif ($products == 'business') {
+				$vars['page'] = 'products-detail ~ Business venues';
 				Template::set('data', $vars);
-		        Template::set('toolbar_title', "Products Detail");
-		        Template::set_view('front_page/product_detail_dining');		
+		        Template::set('toolbar_title', "Business venues");
+		        Template::set_view('front_page/product_detail_business_venues');		
 			} else {
-				$vars['page'] = 'products-detail ~ Other';
+				$vars['page'] = 'products-detail ~ Other Creations';
 				Template::set('data', $vars);
-		        Template::set('toolbar_title', "Products Detail");
-		        Template::set_view('front_page/product_detail_other');	
+		        Template::set('toolbar_title', "Other Creations");
+		        Template::set_view('front_page/product_detail_other_creations');	
 			}
 		}
 		Template::render();	

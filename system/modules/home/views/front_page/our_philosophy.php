@@ -1,7 +1,7 @@
 <div class="wrapper-container inside">
 	<section id="intro">
 		<div class="block-banner">
-			<h3 class="text-white">Our Philosphy</h3>
+			<h3 class="text-white">Our Philosophy</h3>
 		</div>
 		<div class="container">
 			<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
@@ -19,7 +19,16 @@
 			<div class="row text-center">
 				<div class="col-lg-4 col-md-4 col-sm-4">
 					<figure>
-						<img src="<?php echo base_url();?>public/img/philosophy/img_philosophy_01.jpg" alt="">
+						<img src="<?php echo base_url();?>public/img/philosophy/philosophy01.jpg" alt="Quality, Style, Exclusivity">
+					</figure>
+					<article>
+						<strong>Quality, Style, Exclusivity</strong>
+						<p>As part of the heir to a rich culture that also filled with acculturation, we certainly also take care of by way of running our performance through expert ' hands of native Indonesia existing in our team. Where can become its own value for our clients who not infrequently foreign parties.</p>
+					</article>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4">
+					<figure>
+						<img src="<?php echo base_url();?>public/img/philosophy/philosophy02.jpg" alt="Selected Inhouse Designer">
 					</figure>
 					<article>
 						<strong>Selected Inhouse Designer</strong>
@@ -28,19 +37,10 @@
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-4">
 					<figure>
-						<img src="<?php echo base_url();?>public/img/philosophy/img_philosophy_02.jpg" alt="">
+						<img src="<?php echo base_url();?>public/img/philosophy/philosophy03.jpg" alt="Handcrafted Material">
 					</figure>
 					<article>
-						<strong>Custom Handmade Pieces</strong>
-						<p>Our designer may guide you to have many options for your basic material espesially fabrics, which will give you alternative colors, pattern, or kind of fabrics that you need.</p>
-					</article>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4">
-					<figure>
-						<img src="<?php echo base_url();?>public/img/philosophy/img_philosophy_03.jpg" alt="">
-					</figure>
-					<article>
-						<strong>Handcrafted mAterial</strong>
+						<strong>Handcrafted Material</strong>
 						<p>Our products genuinely handcrafted as we have our workshop for making it all. So you may feel trained skill of our team in every detail of the products.</p>
 					</article>
 				</div>
@@ -65,7 +65,7 @@
 			<div class="row text-center">
 				<div class="col-6 col-sm-6 col-md-6">
 					<figure>
-						<img src="<?php echo base_url();?>public/img/philosophy/img_history_01.jpg" alt="our story">
+						<img src="<?php echo base_url();?>public/img/philosophy/philosophy04.jpg" alt="our History">
 					</figure>
 				</div>
 				<div class="col-6 col-sm-6 col-md-6">
@@ -73,8 +73,9 @@
 						<article>
 							<h3 class="title-header">Our</h3>
 							<h3 class="sub-title-header title-label">History <i class="icon-symbol"></i></h3>
-							<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut. Abusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudianda. </p>
-							<p>Nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut. Temporibus autem quibusdam et aut immunie et ulam.  </p>
+							<p>As part of the heir to a rich culture that also filled with acculturation, we certainly also take care of by way of running our performance through expert ' hands of native Indonesia existing in our team. Where can become its own value for our clients who not infrequently foreign parties.</p>
+							<p>Our designer may guide you to have many options for your basic material especially fabrics, which will give you alternative colors, pattern, or kind of fabrics that you need. </p>
+							<p>Our products genuinely handcrafted as we have our workshop for making it all. So you may feel trained skill of our team in every detail of the products.</p>
 						</article>
 					</div>
 				</div>
