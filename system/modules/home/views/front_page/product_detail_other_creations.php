@@ -72,7 +72,7 @@
 							<h3 class="title-header">Private</h3>
 							<h3 class="sub-title-header title-label">Residences <i class="icon-symbol"></i></h3>
 							<p>Give your idealism regarding your residence or place of work interior to us—about how curtains may gracefully be attached, or a charming wallpaper, as well as a comfortable sofa or pretty cushions --we will make all projects done with your satisfaction as our main goal.</p>
-							<a href="<?php echo base_url();?>products/room" title="discover more" class="link">Discover More</a>
+							<a href="<?php echo base_url();?>products/private" title="discover more" class="link">Discover More</a>
 						</article>
 					</div>
 				</div>
@@ -84,7 +84,7 @@
 							<h3 class="title-header">Business</h3>
 							<h3 class="sub-title-header title-label">Venues <i class="icon-symbol"></i></h3>
 							<p>Want to make the exterior of your residence to be more complete? We can. Let's say you need a mattress that makes you reluctant to rise when lying on it while lounging by the pool, or in need of a comfortable bench for relaxing with relatives in your private garden. We will certainly make the products with the best quality we have.</p>
-							<a href="<?php echo base_url();?>products/dining" title="discover more" class="link">Discover More</a>
+							<a href="<?php echo base_url();?>products/business" title="discover more" class="link">Discover More</a>
 						</article>
 					</div>
 				</div>
